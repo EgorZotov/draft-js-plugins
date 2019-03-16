@@ -23,48 +23,49 @@ const defaultCacheBustParam = '?v=2.2.7';
 
 // TODO activate/deactivate different the conversion or search part
 
+const defaultTheme = {
+  emoji: emojiStyles.emoji,
+
+  emojiSuggestions: emojiSuggestionsStyles.emojiSuggestions,
+
+  emojiSuggestionsEntry: emojiSuggestionsEntryStyles.emojiSuggestionsEntry,
+  emojiSuggestionsEntryFocused: emojiSuggestionsEntryStyles.emojiSuggestionsEntryFocused,
+  emojiSuggestionsEntryText: emojiSuggestionsEntryStyles.emojiSuggestionsEntryText,
+  emojiSuggestionsEntryIcon: emojiSuggestionsEntryStyles.emojiSuggestionsEntryIcon,
+
+  emojiSelect: emojiSelectStyles.emojiSelect,
+
+  emojiSelectButton: emojiSelectStyles.emojiSelectButton,
+  emojiSelectButtonPressed: emojiSelectStyles.emojiSelectButtonPressed,
+
+  emojiSelectPopover: emojiSelectStyles.emojiSelectPopover,
+  emojiSelectPopoverClosed: emojiSelectStyles.emojiSelectPopoverClosed,
+  emojiSelectPopoverTitle: emojiSelectStyles.emojiSelectPopoverTitle,
+  emojiSelectPopoverGroups: emojiSelectStyles.emojiSelectPopoverGroups,
+
+  emojiSelectPopoverGroup: emojiSelectStyles.emojiSelectPopoverGroup,
+  emojiSelectPopoverGroupTitle: emojiSelectStyles.emojiSelectPopoverGroupTitle,
+  emojiSelectPopoverGroupList: emojiSelectStyles.emojiSelectPopoverGroupList,
+  emojiSelectPopoverGroupItem: emojiSelectStyles.emojiSelectPopoverGroupItem,
+
+  emojiSelectPopoverToneSelect: emojiSelectStyles.emojiSelectPopoverToneSelect,
+  emojiSelectPopoverToneSelectList: emojiSelectStyles.emojiSelectPopoverToneSelectList,
+  emojiSelectPopoverToneSelectItem: emojiSelectStyles.emojiSelectPopoverToneSelectItem,
+
+  emojiSelectPopoverEntry: emojiSelectStyles.emojiSelectPopoverEntry,
+  emojiSelectPopoverEntryFocused: emojiSelectStyles.emojiSelectPopoverEntryFocused,
+  emojiSelectPopoverEntryIcon: emojiSelectStyles.emojiSelectPopoverEntryIcon,
+
+  emojiSelectPopoverNav: emojiSelectStyles.emojiSelectPopoverNav,
+  emojiSelectPopoverNavItem: emojiSelectStyles.emojiSelectPopoverNavItem,
+  emojiSelectPopoverNavEntry: emojiSelectStyles.emojiSelectPopoverNavEntry,
+  emojiSelectPopoverNavEntryActive: emojiSelectStyles.emojiSelectPopoverNavEntryActive,
+
+  emojiSelectPopoverScrollbar: emojiSelectStyles.emojiSelectPopoverScrollbar,
+  emojiSelectPopoverScrollbarThumb: emojiSelectStyles.emojiSelectPopoverScrollbarThumb,
+};
+
 export default (config = {}) => {
-  const defaultTheme = {
-    emoji: emojiStyles.emoji,
-
-    emojiSuggestions: emojiSuggestionsStyles.emojiSuggestions,
-
-    emojiSuggestionsEntry: emojiSuggestionsEntryStyles.emojiSuggestionsEntry,
-    emojiSuggestionsEntryFocused: emojiSuggestionsEntryStyles.emojiSuggestionsEntryFocused,
-    emojiSuggestionsEntryText: emojiSuggestionsEntryStyles.emojiSuggestionsEntryText,
-    emojiSuggestionsEntryIcon: emojiSuggestionsEntryStyles.emojiSuggestionsEntryIcon,
-
-    emojiSelect: emojiSelectStyles.emojiSelect,
-
-    emojiSelectButton: emojiSelectStyles.emojiSelectButton,
-    emojiSelectButtonPressed: emojiSelectStyles.emojiSelectButtonPressed,
-
-    emojiSelectPopover: emojiSelectStyles.emojiSelectPopover,
-    emojiSelectPopoverClosed: emojiSelectStyles.emojiSelectPopoverClosed,
-    emojiSelectPopoverTitle: emojiSelectStyles.emojiSelectPopoverTitle,
-    emojiSelectPopoverGroups: emojiSelectStyles.emojiSelectPopoverGroups,
-
-    emojiSelectPopoverGroup: emojiSelectStyles.emojiSelectPopoverGroup,
-    emojiSelectPopoverGroupTitle: emojiSelectStyles.emojiSelectPopoverGroupTitle,
-    emojiSelectPopoverGroupList: emojiSelectStyles.emojiSelectPopoverGroupList,
-    emojiSelectPopoverGroupItem: emojiSelectStyles.emojiSelectPopoverGroupItem,
-
-    emojiSelectPopoverToneSelect: emojiSelectStyles.emojiSelectPopoverToneSelect,
-    emojiSelectPopoverToneSelectList: emojiSelectStyles.emojiSelectPopoverToneSelectList,
-    emojiSelectPopoverToneSelectItem: emojiSelectStyles.emojiSelectPopoverToneSelectItem,
-
-    emojiSelectPopoverEntry: emojiSelectStyles.emojiSelectPopoverEntry,
-    emojiSelectPopoverEntryFocused: emojiSelectStyles.emojiSelectPopoverEntryFocused,
-    emojiSelectPopoverEntryIcon: emojiSelectStyles.emojiSelectPopoverEntryIcon,
-
-    emojiSelectPopoverNav: emojiSelectStyles.emojiSelectPopoverNav,
-    emojiSelectPopoverNavItem: emojiSelectStyles.emojiSelectPopoverNavItem,
-    emojiSelectPopoverNavEntry: emojiSelectStyles.emojiSelectPopoverNavEntry,
-    emojiSelectPopoverNavEntryActive: emojiSelectStyles.emojiSelectPopoverNavEntryActive,
-
-    emojiSelectPopoverScrollbar: emojiSelectStyles.emojiSelectPopoverScrollbar,
-    emojiSelectPopoverScrollbarThumb: emojiSelectStyles.emojiSelectPopoverScrollbarThumb,
-  };
 
   const callbacks = {
     keyBindingFn: undefined,
@@ -215,3 +216,7 @@ export default (config = {}) => {
     },
   };
 };
+
+export {
+  defaultTheme
+}

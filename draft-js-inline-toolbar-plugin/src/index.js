@@ -5,8 +5,9 @@ import Separator from './components/Separator';
 import buttonStyles from './buttonStyles.css';
 import toolbarStyles from './toolbarStyles.css';
 
+const defaultTheme = { buttonStyles, toolbarStyles };
+
 export default (config = {}) => {
-  const defaultTheme = { buttonStyles, toolbarStyles };
 
   const store = createStore({
     isVisible: false,
@@ -38,4 +39,5 @@ export default (config = {}) => {
 
 export {
   Separator,
+  defaultTheme
 };
